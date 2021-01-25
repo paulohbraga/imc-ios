@@ -49,6 +49,9 @@
                                 <state key="normal" title="Calcular">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateImc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kjt-vH-v2d"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso (Kg)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfE-Bg-Ov5">
                                 <rect key="frame" x="82" y="250" width="110" height="27"/>
@@ -133,6 +136,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dul-Bg-hje" secondAttribute="trailing" constant="20" id="v32-dT-voR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ivImageResult" destination="IeC-Qo-DIi" id="zbY-Gw-LTM"/>
+                        <outlet property="lbResult" destination="x0X-tN-1vt" id="3kF-qU-Huq"/>
+                        <outlet property="tfHeight" destination="81m-yM-XBu" id="2DW-fV-TfM"/>
+                        <outlet property="tfWeight" destination="SAj-3S-pcr" id="MiF-CB-zzF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
